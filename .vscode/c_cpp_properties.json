@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/build/_deps/bitbot_kernel-src/include/**",
+                "/home/mayh/MYH/Library/libtorch/libtorch_cuda118/include/**",
+                "/usr/include/eigen3"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc-13",
+            "cppStandard": "gnu++20",
+            "cStandard": "c17"
+        }
+    ],
+    "version": 4
+}
