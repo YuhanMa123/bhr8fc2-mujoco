@@ -6,7 +6,7 @@ You can get the bitbot realease from
 To use the code, you can follow the steps below:
 1. Checkout the path of important files(xmls) in this project;
 2. Checkout the prams in user_func.cpp and inference_net.hpp;
-3. Put your policy model in the folder of "Checkpoint";
+3. Put your policy model in the folder "Checkpoint";
 4. follow the steps below:
    * cd build
    * cmake .. 
