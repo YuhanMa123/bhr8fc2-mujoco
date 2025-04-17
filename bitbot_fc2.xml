@@ -4,52 +4,52 @@
 
   <backend port="12888" settings_file="./backend.json"/>
 
-  <mujoco file="./models/xml/bhr8fc2mc.xml"/>
+  <mujoco file="./models/xml/bhr8fc2mc_add_pos_limit.xml"/>
   
   <bus>
-    <device id="0" type="MujocoJoint" name="l_shoulder_Pitch" mode="torque"
+    <device id="0" type="MujocoJoint" name="lshoulderPitch" mode="torque"
             pos_kp='0' pos_kd='0' pos_ki='0' vel_kp='0' vel_kd='0'/>
-    <device id="1" type="MujocoJoint" name="l_shoulder_Roll" mode="torque"
+    <device id="1" type="MujocoJoint" name="lshoulderRoll" mode="torque"
             pos_kp='0' pos_kd='0' pos_ki='0' vel_kp='0' vel_kd='0'/>
-    <device id="2" type="MujocoJoint" name="l_shoulder_Yaw" mode="torque"
+    <device id="2" type="MujocoJoint" name="lshoulderYaw" mode="torque"
             pos_kp='0' pos_kd='0' pos_ki='0' vel_kp='0' vel_kd='0'/>
-    <device id="3" type="MujocoJoint" name="l_elbow" mode="torque"
+    <device id="3" type="MujocoJoint" name="lelbow" mode="torque"
             pos_kp='0' pos_kd='0' pos_ki='0' vel_kp='0' vel_kd='0'/>
-    <device id="4" type="MujocoJoint" name="r_shoulder_Pitch" mode="torque"
+    <device id="4" type="MujocoJoint" name="rshoulderPitch" mode="torque"
             pos_kp='0' pos_kd='0' pos_ki='0' vel_kp='0' vel_kd='0'/>
-    <device id="5" type="MujocoJoint" name="r_shoulder_Roll" mode="torque"
+    <device id="5" type="MujocoJoint" name="rshoulderRoll" mode="torque"
             pos_kp='0' pos_kd='0' pos_ki='0' vel_kp='0' vel_kd='0'/>
-    <device id="6" type="MujocoJoint" name="r_shoulder_Yaw" mode="torque"
+    <device id="6" type="MujocoJoint" name="rshoulderYaw" mode="torque"
             pos_kp='0' pos_kd='0' pos_ki='0' vel_kp='0' vel_kd='0'/>
-    <device id="7" type="MujocoJoint" name="r_elbow" mode="torque"
+    <device id="7" type="MujocoJoint" name="relbow" mode="torque"
             pos_kp='0' pos_kd='0' pos_ki='0' vel_kp='0' vel_kd='0'/>
 
     <device id="8" type="MujocoImu" name="imu"
            site="imu" acc="linear-acceleration" gyro="angular-velocity"/>
     
-    <device id="9" type="MujocoJoint" name="l_hip_Yaw" mode="torque"
+    <device id="9" type="MujocoJoint" name="lhipYaw" mode="torque"
             pos_kp='0' pos_kd='0' pos_ki='0' vel_kp='0' vel_kd='0'/>
-    <device id="10" type="MujocoJoint" name="l_hip_Roll" mode="torque"
+    <device id="10" type="MujocoJoint" name="lhipRoll" mode="torque"
             pos_kp='0' pos_kd='0' pos_ki='0' vel_kp='0' vel_kd='0'/>
-    <device id="11" type="MujocoJoint" name="l_hip_Pitch" mode="torque"
+    <device id="11" type="MujocoJoint" name="lhipPitch" mode="torque"
             pos_kp='0' pos_kd='0' pos_ki='0' vel_kp='0' vel_kd='0'/>
-    <device id="12" type="MujocoJoint" name="l_knee" mode="torque"
+    <device id="12" type="MujocoJoint" name="lknee" mode="torque"
             pos_kp='0' pos_kd='0' pos_ki='0' vel_kp='0' vel_kd='0'/>
-    <device id="13" type="MujocoJoint" name="l_ankle_Pitch" mode="torque"
+    <device id="13" type="MujocoJoint" name="lankle1" mode="torque"
             pos_kp='0' pos_kd='0' pos_ki='0' vel_kp='0' vel_kd='0'/>
-    <device id="14" type="MujocoJoint" name="l_ankle_Roll" mode="torque"
+    <device id="14" type="MujocoJoint" name="lankle2" mode="torque"
             pos_kp='0' pos_kd='0' pos_ki='0' vel_kp='0' vel_kd='0'/>
-    <device id="15" type="MujocoJoint" name="r_hip_Yaw" mode="torque"
+    <device id="15" type="MujocoJoint" name="rhipYaw" mode="torque"
             pos_kp='0' pos_kd='0' pos_ki='0' vel_kp='0' vel_kd='0'/>
-    <device id="16" type="MujocoJoint" name="r_hip_Roll" mode="torque"
+    <device id="16" type="MujocoJoint" name="rhipRoll" mode="torque"
             pos_kp='0' pos_kd='0' pos_ki='0' vel_kp='0' vel_kd='0'/>
-    <device id="17" type="MujocoJoint" name="r_hip_Pitch" mode="torque"
+    <device id="17" type="MujocoJoint" name="rhipPitch" mode="torque"
             pos_kp='0' pos_kd='0' pos_ki='0' vel_kp='0' vel_kd='0'/>
-    <device id="18" type="MujocoJoint" name="r_knee" mode="torque"
+    <device id="18" type="MujocoJoint" name="rknee" mode="torque"
             pos_kp='0' pos_kd='0' pos_ki='0' vel_kp='0' vel_kd='0'/>
-    <device id="19" type="MujocoJoint" name="r_ankle_Pitch" mode="torque"
+    <device id="19" type="MujocoJoint" name="rankle1" mode="torque"
             pos_kp='0' pos_kd='0' pos_ki='0' vel_kp='0' vel_kd='0'/>
-    <device id="20" type="MujocoJoint" name="r_ankle_Roll" mode="torque"
+    <device id="20" type="MujocoJoint" name="rankle2" mode="torque"
             pos_kp='0' pos_kd='0' pos_ki='0' vel_kp='0' vel_kd='0'/>
 
     <device id="21" type="MujocoFramepos" name="imu_pos" />
